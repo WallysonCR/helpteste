@@ -1,0 +1,54 @@
+.login-screen {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: #f1f5f9;
+  background-image: 
+    radial-gradient(at 15% 15%, rgba(37, 99, 235, 0.08) 0px, transparent 50%),
+    radial-gradient(at 85% 85%, rgba(14, 165, 233, 0.09) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(248, 250, 252, 0.6) 0px, transparent 70%);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Subtle background accent shapes */
+.login-screen::before {
+  content: "";
+  position: absolute;
+  top: -120px;
+  right: -80px;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(26, 111, 196, 0.12), transparent 70%);
+  pointer-events: none;
+  filter: blur(40px);
+}
+
+.login-screen::after {
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  left: -80px;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.14), transparent 70%);
+  pointer-events: none;
+  filter: blur(40px);
+}
+
+@media (max-width: 480px) {
+  .login-screen {
+    padding: 16px;
+    align-items: flex-start;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}

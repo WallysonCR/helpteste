@@ -1,0 +1,86 @@
+.ht-select {
+  margin-bottom: var(--space-4);
+  text-align: left;
+}
+
+.ht-select__label {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-2);
+}
+
+.ht-select__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.ht-select__icon {
+  position: absolute;
+  left: var(--space-3);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-muted);
+  pointer-events: none;
+  transition: color var(--transition-base);
+}
+
+.ht-select__input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 36px 10px 14px;
+  font-size: var(--text-base);
+  font-family: inherit;
+  border-radius: var(--radius-lg);
+  border: 1.5px solid var(--color-border-hover);
+  outline: none;
+  background: var(--color-surface-hover);
+  color: var(--color-text-primary);
+  appearance: none;
+  cursor: pointer;
+  transition: border-color var(--transition-base), box-shadow var(--transition-base), background-color var(--transition-base);
+}
+
+.ht-select__wrapper--has-icon .ht-select__input {
+  padding-left: 38px;
+}
+
+.ht-select__input:focus {
+  background: var(--color-surface);
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-focus);
+}
+
+.ht-select__wrapper:focus-within .ht-select__icon {
+  color: var(--color-primary);
+}
+
+.ht-select__input--error {
+  border-color: var(--color-error);
+  background: var(--color-error-light);
+}
+
+.ht-select__chevron {
+  position: absolute;
+  right: var(--space-3);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-muted);
+  pointer-events: none;
+}
+
+.ht-select__input--placeholder {
+  color: var(--color-text-secondary);
+}
+
+.ht-select__error {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: var(--space-2);
+  font-size: var(--text-xs);
+  color: var(--color-error);
+  font-weight: var(--weight-medium);
+}

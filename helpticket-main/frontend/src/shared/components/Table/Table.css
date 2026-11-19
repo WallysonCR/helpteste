@@ -1,0 +1,82 @@
+.ht-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.ht-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-base);
+}
+
+.ht-table th {
+  text-align: left;
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface-hover);
+  white-space: nowrap;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.ht-table td {
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+  vertical-align: middle;
+}
+
+.ht-table tbody tr {
+  transition: background-color var(--transition-fast);
+}
+
+.ht-table tbody tr:hover {
+  background: var(--color-primary-50);
+}
+
+.ht-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* ── Compact variant ── */
+.ht-table--compact th,
+.ht-table--compact td {
+  padding: var(--space-2) var(--space-3);
+}
+
+/* ── Striped variant ── */
+.ht-table--striped tbody tr:nth-child(even) {
+  background: var(--color-surface-hover);
+}
+
+.ht-table--striped tbody tr:nth-child(even):hover {
+  background: var(--color-primary-50);
+}
+
+/* ── Clickable rows ── */
+.ht-table--clickable tbody tr {
+  cursor: pointer;
+}
+
+/* ── Cell helpers ── */
+.ht-table td.ht-table__cell--muted {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.ht-table td.ht-table__cell--mono {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.ht-table td.ht-table__cell--actions {
+  text-align: right;
+  white-space: nowrap;
+}

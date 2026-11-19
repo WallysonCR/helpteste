@@ -1,0 +1,42 @@
+.ht-banner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  border-radius: var(--radius-lg);
+  padding: 10px var(--space-3);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  margin-bottom: var(--space-4);
+  line-height: var(--leading-normal);
+  text-align: left;
+  animation: bannerSlideIn 0.25s ease-out;
+}
+
+@keyframes bannerSlideIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.ht-banner--error {
+  background: var(--color-error-light);
+  border: 1px solid #FECACA;
+  color: var(--color-error-text);
+}
+
+.ht-banner--success {
+  background: var(--color-success-light);
+  border: 1px solid #BBF7D0;
+  color: var(--color-success-text);
+}
+
+.ht-banner--warning {
+  background: var(--color-warning-light);
+  border: 1px solid #FDE68A;
+  color: var(--color-warning-text);
+}
+
+.ht-banner--info {
+  background: var(--color-info-light);
+  border: 1px solid #BFDBFE;
+  color: var(--color-info-text);
+}

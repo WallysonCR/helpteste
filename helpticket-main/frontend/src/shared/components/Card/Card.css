@@ -1,0 +1,60 @@
+.ht-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+.ht-card--interactive:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+  cursor: pointer;
+}
+
+.ht-card--flat {
+  box-shadow: none;
+}
+
+.ht-card--no-border {
+  border: none;
+}
+
+.ht-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-5) var(--space-6);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.ht-card__header-title {
+  font-size: var(--text-md);
+  font-weight: var(--weight-bold);
+  color: var(--color-text-primary);
+}
+
+.ht-card__header-subtitle {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+.ht-card__body {
+  padding: var(--space-6);
+}
+
+.ht-card__body--compact {
+  padding: var(--space-4);
+}
+
+.ht-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-6);
+  border-top: 1px solid var(--color-border);
+  background: var(--color-surface-hover);
+}

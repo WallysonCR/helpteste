@@ -1,0 +1,75 @@
+.ht-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-full);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text-inverse);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-hover));
+  user-select: none;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.ht-avatar--sm {
+  width: 28px;
+  height: 28px;
+  font-size: 11px;
+}
+
+.ht-avatar--md {
+  width: 36px;
+  height: 36px;
+  font-size: var(--text-sm);
+}
+
+.ht-avatar--lg {
+  width: 44px;
+  height: 44px;
+  font-size: var(--text-md);
+}
+
+.ht-avatar--xl {
+  width: 56px;
+  height: 56px;
+  font-size: var(--text-lg);
+}
+
+.ht-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+/* ── Status dot ── */
+.ht-avatar__status {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: var(--radius-full);
+  border: 2px solid var(--color-surface);
+}
+
+.ht-avatar__status--online {
+  background: var(--color-success);
+}
+
+.ht-avatar__status--offline {
+  background: var(--color-text-muted);
+}
+
+.ht-avatar__status--busy {
+  background: var(--color-error);
+}
+
+/* ── Color variants for variety ── */
+.ht-avatar--blue    { background: linear-gradient(135deg, #2563EB, #1D4ED8); }
+.ht-avatar--green   { background: linear-gradient(135deg, #16A34A, #15803D); }
+.ht-avatar--orange  { background: linear-gradient(135deg, #EA580C, #C2410C); }
+.ht-avatar--purple  { background: linear-gradient(135deg, #9333EA, #7E22CE); }
+.ht-avatar--red     { background: linear-gradient(135deg, #DC2626, #B91C1C); }
+.ht-avatar--teal    { background: linear-gradient(135deg, #0D9488, #0F766E); }

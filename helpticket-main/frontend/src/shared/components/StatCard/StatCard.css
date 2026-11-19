@@ -1,0 +1,97 @@
+.ht-stat-card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  padding: var(--space-5) var(--space-6);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+  min-width: 0;
+}
+
+.ht-stat-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.ht-stat-card__icon {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ht-stat-card__icon--info {
+  background: var(--color-info-light);
+  color: var(--color-info);
+}
+
+.ht-stat-card__icon--success {
+  background: var(--color-success-light);
+  color: var(--color-success);
+}
+
+.ht-stat-card__icon--warning {
+  background: var(--color-warning-light);
+  color: var(--color-warning);
+}
+
+.ht-stat-card__icon--error {
+  background: var(--color-error-light);
+  color: var(--color-error);
+}
+
+.ht-stat-card__icon--neutral {
+  background: var(--color-bg);
+  color: var(--color-text-secondary);
+}
+
+.ht-stat-card__content {
+  min-width: 0;
+  flex: 1;
+}
+
+.ht-stat-card__label {
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--space-1);
+}
+
+.ht-stat-card__value {
+  font-size: var(--text-3xl);
+  font-weight: var(--weight-extrabold);
+  color: var(--color-text-primary);
+  line-height: 1.1;
+  margin-bottom: var(--space-1);
+}
+
+.ht-stat-card__subtitle {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  line-height: var(--leading-normal);
+}
+
+/* ── Accent border variant ── */
+.ht-stat-card--accent-error {
+  border-left: 3px solid var(--color-error);
+}
+
+.ht-stat-card--accent-warning {
+  border-left: 3px solid var(--color-warning);
+}
+
+.ht-stat-card--accent-success {
+  border-left: 3px solid var(--color-success);
+}
+
+.ht-stat-card--accent-info {
+  border-left: 3px solid var(--color-info);
+}

@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/backend/">
+    <Project Path="backend/HelpTicket.Api/HelpTicket.Api.csproj" />
+    <Project Path="backend/HelpTicket.Tests/HelpTicket.Tests.csproj" />
+  </Folder>
+</Solution>
